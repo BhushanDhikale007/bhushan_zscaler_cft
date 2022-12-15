@@ -11,7 +11,7 @@
               "BucketKeyEnabled": false,
               "ServerSideEncryptionByDefault": {
                 "KMSMasterKeyID": "zs-test-0",
-                "SSEAlgorithm": ""
+                "SSEAlgorithm": " "
               }
             }
           ]
