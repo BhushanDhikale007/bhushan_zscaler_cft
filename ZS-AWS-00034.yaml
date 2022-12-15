@@ -15,7 +15,7 @@
             "ExpirationInDays" : 4
           ]
         }
-        "ObjectLockEnabled": true,
+        "ObjectLockEnabled": false,
         "PublicAccessBlockConfiguration": {
           "BlockPublicAcls": true,
           "BlockPublicPolicy": true,
