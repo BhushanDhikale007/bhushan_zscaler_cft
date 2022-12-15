@@ -1,0 +1,12 @@
+{
+  "Type": "AWS::EC2::Instance",
+  "Properties": {
+    "ImageId": "",
+    "IamInstanceProfile": "test_IAM_instance_profile",
+    "SecurityGroupIds": [
+      "sg1",
+      "sg2"
+    ],
+    "Monitoring": false
+  }
+}
