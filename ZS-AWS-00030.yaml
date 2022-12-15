@@ -1,0 +1,26 @@
+{
+  "Type": "AWS::EC2::Instance",
+  "Properties": {
+    "ImageId": "test_instance_123456",
+    "IamInstanceProfile": "test_IAM_instance_profile",
+    "SecurityGroupIds": [
+      "sg1",
+      "sg2"
+    ],
+    "Monitoring": false,
+    "NetworkInterfaces": [
+      {
+        "AssociatePublicIpAddress": true,
+        "DeviceIndex": "0",
+        "GroupSet": [
+          {
+            "Ref": "myVPCEC2SecurityGroup"
+          }
+        ],
+        "SubnetId": {
+          "Ref": "PublicSubnet"
+        }
+      }
+    ]
+  }
+}
