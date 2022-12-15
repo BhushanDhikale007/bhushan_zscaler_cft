@@ -3,7 +3,7 @@
       "Properties": {
         "EnableLogFileValidation": false,
         "IncludeGlobalServiceEvents": false,
-        "IsLogging": true,
+        "IsLogging": false,
         "IsMultiRegionTrail": false,
         "IsOrganizationTrail": false,
         "KMSKeyId": "Test_KMS",
