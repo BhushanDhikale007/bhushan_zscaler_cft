@@ -1,0 +1,12 @@
+{
+      "Type": "AWS::CloudTrail::Trail",
+      "Properties": {
+        "EnableLogFileValidation": false,
+        "IncludeGlobalServiceEvents": false,
+        "IsLogging": true,
+        "IsMultiRegionTrail": false,
+        "IsOrganizationTrail": false,
+        "KMSKeyId": "Test_KMS",
+        "S3KeyPrefix": "ZS"
+      }
+}
