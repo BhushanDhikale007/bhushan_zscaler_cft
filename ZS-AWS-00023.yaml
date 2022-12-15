@@ -1,0 +1,9 @@
+{
+  "Type" : "AWS::KMS::Key",
+  "Properties" : {
+      "Description" : "",
+      "Enabled" : false,
+      "EnableKeyRotation" : false,
+      "Tags" : [ Tag, ... ]
+    }
+}
