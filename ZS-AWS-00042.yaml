@@ -1,0 +1,16 @@
+{
+  "Type": "AWS::EC2::SecurityGroup",
+  "Properties": {
+    "GroupDescription": "testing sg",
+    "GroupName": "zs-test-group",
+    "SecurityGroupIngress": [
+      {
+        "CidrIp": Fn::Ref 'SSHLocation',
+        "FromPort": 9300,
+        "IpProtocol": "tcp",
+        "ToPort": 9300
+      }
+    ],
+    "VpcId": "zs_test_id"
+  }
+}
