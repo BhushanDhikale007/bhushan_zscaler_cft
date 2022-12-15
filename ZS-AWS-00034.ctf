@@ -1,0 +1,28 @@
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Resources": {
+    "TestS3_00": {
+      "Type": "AWS::S3::Bucket",
+      "Properties": {
+        "AccessControl": "PublicRead",
+        "BucketName": "TestS3_00",
+        "LoggingConfiguration": {
+          "DestinationBucketName": "zs-test-01"
+        },
+        "LifecycleConfiguration" : {
+          "Rules" : [
+            "Id" : "test-id",
+            "ExpirationInDays" : 4
+          ]
+        }
+        "ObjectLockEnabled": true,
+        "PublicAccessBlockConfiguration": {
+          "BlockPublicAcls": true,
+          "BlockPublicPolicy": true,
+          "IgnorePublicAcls": true,
+          "RestrictPublicBuckets": true
+        }
+      }
+    }
+  }
+}
