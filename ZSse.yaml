@@ -4,7 +4,7 @@
         "AllocatedStorage": "String",
         "AllowMajorVersionUpgrade": false,
         "AutoMinorVersionUpgrade": false,
-        "BackupRetentionPeriod": 8,
+        "BackupRetentionPeriod": 0,
         "DBName": "ZS_test",
         "Engine": "aurora",
         "EngineVersion": "v1.3",
