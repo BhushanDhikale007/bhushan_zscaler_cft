@@ -9,13 +9,13 @@ Resources:
       Id: key-default-1
       Statement:
         - Sid: Enable IAM User Permissions
-          Effect: Allow
+          Effect: 
           Principal:
             AWS: 'arn:aws:iam::111122223333:root'
           Action: 'kms:*'
           Resource: '*'
         - Sid: Allow administration of the key
-          Effect: Allow
+          Effect: 
           Principal:
             AWS: 'arn:aws:iam::111122223333:user/Alice'
           Action:
@@ -33,7 +33,7 @@ Resources:
             - 'kms:CancelKeyDeletion'
           Resource: '*'
         - Sid: Allow use of the key
-          Effect: Allow
+          Effect: 
           Principal:
             AWS: 'arn:aws:iam::111122223333:user/Bob'
           Action:
