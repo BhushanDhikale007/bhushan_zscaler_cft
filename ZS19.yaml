@@ -1,0 +1,22 @@
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Resources": {
+    "TestS3_00": {
+      "Type": "AWS::S3::Bucket",
+      "Properties": {
+        "AccessControl": "Public",
+        "BucketName": "TestS3_00",
+        "LoggingConfiguration": {
+          "DestinationBucketName": "zs-test-01"
+        },
+        "ObjectLockEnabled": false,
+        "PublicAccessBlockConfiguration": {
+          "BlockPublicAcls": false,
+          "BlockPublicPolicy": false,
+          "IgnorePublicAcls": false,
+          "RestrictPublicBuckets": false
+        }
+      }
+    }
+  }
+}
