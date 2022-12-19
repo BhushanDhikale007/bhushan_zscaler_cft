@@ -2,7 +2,5 @@ Resources:
   S3Bucket:
     Type: AWS::S3::Bucket
     Properties:
-     VersioningConfiguration:
-      Status: Suspended
-        LoggingConfiguration:
-          DestinationBucketName: xc
+     LoggingConfiguration:
+      DestinationBucketName: "abc"
