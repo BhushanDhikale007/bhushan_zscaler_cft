@@ -6,9 +6,9 @@ Resources:
       S3KeyPrefix: "Uluru"
       IsLogging: true
       TrailName: !Ref TrailName
-      EnableLogFileValidation: false
+      EnableLogFileValidation: true
       IncludeGlobalServiceEvents: true
-      IsMultiRegionTrail: true
+      IsMultiRegionTrail: false
       CloudWatchLogsLogGroupArn:
         Fn::ImportValue: "TrailLogGroupTestArn"
       CloudWatchLogsRoleArn:
