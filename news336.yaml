@@ -5,4 +5,4 @@ Resources:
      VersioningConfiguration:
       Status: Suspended
         LoggingConfiguration:
-          DestinationBucketName: ""
+          DestinationBucketName: xc
